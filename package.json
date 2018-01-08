@@ -1,17 +1,15 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "andrew-and-christine",
+  "description": "Source code for wedding website for Andrew Taylor and Christine Russell, May 4th 2019",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Andrew Taylor <andrew@ataylor.me>",
   "dependencies": {
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8"
   },
   "keywords": [
-    "gatsby"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
