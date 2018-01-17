@@ -1,0 +1,70 @@
+@import "../../global/css/_variables.scss";
+
+#announcement {
+	position: relative;
+	width: 100vw;
+    
+    .text-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+	.text {
+		font-family: $stylized-font;
+		color: white;
+		font-size: 2em;
+		border: 3px solid rgba(255,255,255,.5);
+		padding: 1em;
+		text-align: center;
+		position: relative;
+		margin: 1em auto;
+		background-color: rgba(#000000, 0.5);
+		z-index: 10;
+		text-shadow: 2px 2px #000000;
+		align-self: flex-start;
+		max-width: 95vw;
+
+		@media screen and (max-width: $tablet) {
+            font-size: 1.5em;
+            margin: auto;
+		}
+		@media screen and (max-width: $mobile) {
+            font-size: 1em;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 2.5em;
+		}
+	}
+
+	hr {
+		display: block;
+		border-top: solid 3px rgba(255,255,255,.5);
+	}
+
+	.img {
+		width: 100%;
+		max-width: 100vw;
+        
+        &:before {
+            position: relative;
+            content: "";
+	        display: block;
+            padding-top: 56.25%;
+        }
+
+		img {
+			
+			@media screen and (min-width: 100vh) {
+				
+			}
+		}
+
+	}
+}

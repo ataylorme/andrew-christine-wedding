@@ -1,0 +1,26 @@
+// For breakpoints
+$mobile: 630px;
+$tablet: 750px;
+$desktop: 1920px;
+
+// Colors
+$color-blue: #6EADFF;
+$color-dark-blue: darken(#6EADFF, 30%);
+$color-dark-gray: darken(#333333, 10%);
+
+// Fonts
+$main-font: 'Roboto', sans-serif;
+$stylized-font: 'Shadows Into Light Two', cursive;
+
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}

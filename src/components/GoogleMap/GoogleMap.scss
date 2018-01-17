@@ -1,0 +1,34 @@
+@import "../../global/css/_variables.scss";
+
+#gmap {
+    position: relative;
+    width: 100vw;
+    &:before {
+        position: relative;
+        content: "";
+        display: block;
+        padding-top: 50%;
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 25%;
+        }
+    }
+	
+	.frame-wrap {
+		position:  absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+	}
+
+	@media screen and (max-width: $tablet) {
+		
+	}
+	@media screen and (max-width: $mobile) {
+		
+	}
+	@media screen and (min-width: $desktop) {
+		
+	}
+}
