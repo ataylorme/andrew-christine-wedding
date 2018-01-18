@@ -5,12 +5,12 @@ $desktop: 1920px;
 
 // Colors
 $color-blue: #6EADFF;
-$color-dark-blue: darken(#6EADFF, 30%);
+$color-dark-blue: darken(#6EADFF, 40%);
 $color-dark-gray: darken(#333333, 10%);
+$color-light-gray: lighten(#333333, 40%);
 
 // Fonts
-$main-font: 'Roboto', sans-serif;
-$stylized-font: 'Shadows Into Light Two', cursive;
+$main-font: 'Shadows Into Light Two', cursive;
 
 %clearfix {
     *zoom: 1;

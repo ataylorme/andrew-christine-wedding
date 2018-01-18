@@ -17,16 +17,20 @@ export default props => {
 
   return (
     <div>
-        <SectionHeading title='Wonser Woods' />
+        <SectionHeading title='Venue' />
         <div id="venue">
+            <div className="overlay white"></div>
             <Img sizes={image.childImageSharp.sizes} />
             <div className="content">
-                <p>Our wedding will be held at <a href="https://wonserwoods.com/">Wonser Woods</a> in Estacada, Oregon. </p>
+                <p><a href="https://wonserwoods.com/">Wonser Woods Estate</a></p>
             </div>
             <div className="video-box">
                 <div className="video">
                     <iframe src="https://player.vimeo.com/video/189338326?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
                 </div>
+            </div>
+            <div className="content">
+                <p>Estacada, Oregon</p>
             </div>
         </div>
     </div>

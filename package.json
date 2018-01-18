@@ -24,7 +24,6 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-sharp": "^1.6.16",
     "prettier": "^1.9.2",
-    "typeface-roboto": "0.0.50",
     "typeface-shadows-into-light-two": "0.0.44"
   }
 }

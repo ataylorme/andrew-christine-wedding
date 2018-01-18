@@ -9,7 +9,7 @@ const IndexPage = ({data}) => (
   <div>
 	  <Announcement image={data.heroImage} />
 	  <Venue image={data.venueImage} />
-	  <GoogleMap />
+	  <GoogleMap  image={data.venueImage} />
   </div>
 )
 
@@ -32,7 +32,7 @@ query FrontPageQuery {
 	}
   }
   venueImage: file(
-	relativePath: { eq: "wonser-woods-estate-front-door.png" }
+	relativePath: { eq: "ivy-on-wood.jpg" }
   ) {
 	childImageSharp {
 	  sizes(maxWidth: 2560) {
