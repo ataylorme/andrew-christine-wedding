@@ -22,10 +22,10 @@ export default props => {
             <Img sizes={image.childImageSharp.sizes} />
             <div className="content">
                 <p>Our wedding will be held at <a href="https://wonserwoods.com/">Wonser Woods</a> in Estacada, Oregon. </p>
-                <div className="video-box">
-                    <div className="video">
-                        <iframe src="https://player.vimeo.com/video/189338326?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-                    </div>
+            </div>
+            <div className="video-box">
+                <div className="video">
+                    <iframe src="https://player.vimeo.com/video/189338326?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
