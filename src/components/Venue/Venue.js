@@ -1,36 +1,29 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import SectionHeading from '../SectionHeading/SectionHeading.js'
+import EmbedBox from '../EmbedBox/EmbedBox.js'
+import { rhythm } from '../../utils/typography'
 
 require('./Venue.scss')
 
 export default props => {
 
-    let { image } = props
-
-    if (image === null || image === undefined) {
-        return null
-    }
-
-    // Strip the max width sizes as it was making the images grainy
-    delete image.childImageSharp.sizes.sizes;
+    const embed = (<iframe src="https://player.vimeo.com/video/189338326?title=0&byline=0&portrait=0" width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>)
 
   return (
-    <div>
-        <SectionHeading title='Venue' />
-        <div id="venue">
-            <div className="overlay white"></div>
-            <Img sizes={image.childImageSharp.sizes} />
-            <div className="content">
-                <p><a href="https://wonserwoods.com/">Wonser Woods Estate</a></p>
-            </div>
-            <div className="video-box">
-                <div className="video">
-                    <iframe src="https://player.vimeo.com/video/189338326?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    <div id="venue">
+        <div className="inner">
+            <SectionHeading title='Venue' />
+            <div className="flex-wrap">
+                <div className="content">
+                    <h4>
+                        <a href="https://wonserwoods.com/">Wonser Woods Estate</a>
+                    </h4>
+                    <p>
+                        24250 S. Raney Ln.
+                        <br />Estacada, Oregon 97023
+                    </p>
                 </div>
-            </div>
-            <div className="content">
-                <p>Estacada, Oregon</p>
+                <EmbedBox embed={embed} />
             </div>
         </div>
     </div>

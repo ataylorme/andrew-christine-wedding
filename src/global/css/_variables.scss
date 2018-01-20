@@ -4,13 +4,15 @@ $tablet: 750px;
 $desktop: 1920px;
 
 // Colors
-$color-blue: #6EADFF;
-$color-dark-blue: darken(#6EADFF, 40%);
+$color-blue: #4d6687;
+$color-dark-blue: darken($color-blue, 10%);
+$color-light-blue: lighten($color-blue, 30%);
 $color-dark-gray: darken(#333333, 10%);
+$color-gray: lighten(#333333, 10%);
 $color-light-gray: lighten(#333333, 40%);
 
 // Fonts
-$main-font: 'Shadows Into Light Two', cursive;
+$main-font: 'Playfair Display', serif;
 
 %clearfix {
     *zoom: 1;

@@ -1,0 +1,37 @@
+@import "../../global/css/_variables.scss";
+
+.embed-box {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 2em auto;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+    &.ratio1_1:before{
+        padding-top: 100%;
+    }
+    &.ratio2_1:before{
+        padding-top: 50%;
+    }
+    &.ratio1_2:before{
+        padding-top: 200%;
+    }
+    &.ratio4_3:before{
+        padding-top: 75%;
+    }
+    &.ratio16_9:before{
+        padding-top: 56.25%;
+    }
+
+    .embed {
+        position:  absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}

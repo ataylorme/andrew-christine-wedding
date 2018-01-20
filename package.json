@@ -24,6 +24,8 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-sharp": "^1.6.16",
     "prettier": "^1.9.2",
-    "typeface-shadows-into-light-two": "0.0.44"
+    "typeface-playfair-display": "0.0.45",
+    "typography": "^0.16.6",
+    "typography-theme-us-web-design-standards": "^0.16.9"
   }
 }
