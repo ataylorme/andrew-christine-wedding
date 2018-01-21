@@ -28,17 +28,14 @@ fi
 echo -e "\nRunning gatsby build"
 gatsby build
 
-echo -e "\nChanging into build directory"
-cd /Users/andrewtaylor/Sites/andrew-and-christine-2019
-
 echo -e "\nRemoving existing build directory"
-rm -rf ./web
+rm -rf /Users/andrewtaylor/Sites/andrew-and-christine-2019/web
 
 echo -e "\nCopying build files"
-cp -r /Users/andrewtaylor/Development/andrew-christine-wedding/public ./web
+mv /Users/andrewtaylor/Development/andrew-christine-wedding/public /Users/andrewtaylor/Sites/andrew-and-christine-2019/web
 
 echo -e "\nCopying index.php"
-cp /Users/andrewtaylor/Development/andrew-christine-wedding/index.php ./web/index.php
+cp /Users/andrewtaylor/Development/andrew-christine-wedding/index.php /Users/andrewtaylor/Sites/andrew-and-christine-2019/web/index.php
 
 echo -e "\nCommitting files"
 git add -A .
@@ -51,7 +48,7 @@ git push -f
 echo -e "\nPushing updates to test on Pantheon"
 terminus env:deploy andrew-and-christine-2019.test --note="Updates to wedding site (${date_time})"
 
-echo -e "\nPushing updates to live on Pantheon and clearing cache"
-terminus env:deploy andrew-and-christine-2019.live --note="Updates to wedding site (${date_time})" --cc
+echo -e "\nPushing updates to live on Pantheon"
+terminus env:deploy andrew-and-christine-2019.live --note="Updates to wedding site (${date_time})"
 
 echo -e "\nAll done!"
