@@ -31,6 +31,15 @@ gatsby build
 echo -e "\nChanging into build directory"
 cd /Users/andrewtaylor/Sites/andrew-and-christine-2019
 
+echo -e "\nRemoving existing build directory"
+rm -rf ./web
+
+echo -e "\nCopying build files"
+cp -r /Users/andrewtaylor/Development/andrew-christine-wedding/public ./web
+
+echo -e "\nCopying index.php"
+cp /Users/andrewtaylor/Development/andrew-christine-wedding/index.php ./web/index.php
+
 echo -e "\nCommitting files"
 git add -A .
 date_time="$(date +'%m/%d/%Y at %r')"
