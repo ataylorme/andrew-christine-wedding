@@ -1,5 +1,9 @@
 @import "./_variables.scss";
 
+body {
+    font-size: 36px;
+}
+
 #content {
     line-height: 1.25em;
 
@@ -29,6 +33,10 @@
 		@media screen and (min-width: $desktop) {
             font-size: 1.5em;
 		}
+    }
+
+    p {
+        margin-bottom: 1em;
     }
 }
 
