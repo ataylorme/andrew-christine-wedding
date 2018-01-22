@@ -1,31 +1,20 @@
 {
-  "name": "andrew-and-christine",
-  "description": "Source code for wedding website for Andrew Taylor and Christine Russell, May 4th 2019",
-  "version": "1.0.0",
-  "author": "Andrew Taylor <andrew@ataylor.me>",
+  "name": "andrew-christine",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "gatsby": "^1.9.145",
-    "gatsby-link": "^1.6.32",
-    "gatsby-plugin-react-helmet": "^1.0.8"
+    "animate.css": "^3.5.2",
+    "bootstrap": "^4.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "reactstrap": "^5.0.0-alpha.4",
+    "typeface-playfair-display": "0.0.45"
   },
-  "keywords": [],
-  "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "gatsby-image": "^1.0.31",
-    "gatsby-plugin-offline": "^1.0.12",
-    "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-plugin-sharp": "^1.6.24",
-    "gatsby-source-filesystem": "^1.5.11",
-    "gatsby-transformer-sharp": "^1.6.16",
-    "prettier": "^1.9.2",
-    "typeface-playfair-display": "0.0.45",
-    "typography": "^0.16.6",
-    "typography-theme-us-web-design-standards": "^0.16.9"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

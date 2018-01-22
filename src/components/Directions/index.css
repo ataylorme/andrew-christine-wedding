@@ -1,0 +1,19 @@
+#directions {
+    background: #a3b4ca;
+    color: #FFFFFF;
+    padding: 2em 1em;
+    text-shadow: 2px 2px rgba(77,76,76,.5);
+}
+#directions h2 {
+    padding: 0 0 0.5em 0;
+}
+@media screen and (max-width: 1280px) {
+    #directions {
+        
+    }   
+}
+@media screen and (max-width: 640px) {
+    #directions {
+
+    }
+}

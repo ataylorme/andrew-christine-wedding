@@ -1,0 +1,60 @@
+#announcement {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+}
+#announcement h1 {
+    font-size: 5em;
+}
+#announcement h2 {
+    font-size: 4em;
+}
+#announcement .text-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#announcement .image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-2560.jpg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-2560.webp'); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 100%; 
+    position: absolute; 
+    width: 100%;
+}
+.icon {
+    bottom: 0px; 
+    cursor: pointer; 
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    fill: #FFFFFF;
+    max-width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 1280px) {
+    #announcement .image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-1280.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-1280.webp');
+    }   
+}
+@media screen and (max-width: 640px) {
+    #announcement .image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-640.jpg'); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-640.webp'); 
+    }
+    #announcement h1 {
+        font-size: 4em;
+    }
+    #announcement h2 {
+        font-size: 3em;
+    }
+}
