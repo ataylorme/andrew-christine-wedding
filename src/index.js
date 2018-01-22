@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 require('typeface-playfair-display');
+require('./utils/modernizr-custom.js');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
