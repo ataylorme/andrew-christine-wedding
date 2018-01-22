@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 // import icons from '../../utils/icons.js'
-import { Container, Col, Row } from 'reactstrap';
+import { Container, Col, Row, Button } from 'reactstrap';
 
 class Directions extends Component {
   render() {
@@ -13,6 +13,17 @@ class Directions extends Component {
                         <h2 className="display-3 text-center">
                             Directions
                         </h2>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>
+                            <a href="https://www.google.com/maps/dir//Wonser+Woods+Estate,+24250+S+Raney+Ln,+Estacada,+OR+97023/@45.2664861,-122.371495,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54957f697e8d4ec5:0xe026ba4ece283abf!2m2!1d-122.3693063!2d45.2664823!3e0">
+                                <Button color="primary" size="lg" block>
+                                    Direction in Google Maps
+                                </Button>
+                            </a>
+                        </p>
                     </Col>
                 </Row>
                 <Row>
