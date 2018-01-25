@@ -64,3 +64,11 @@
         font-size: 3em;
     }
 }
+@media screen and (max-width: 400px) {
+    #announcement .image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-400.jpg'); 
+    }
+    .webp #announcement .image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('andrew-christine-engagement-12-09-2017-400.webp'); 
+    }
+}
