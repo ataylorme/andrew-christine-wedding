@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "animate.css": "^3.5.2",
-    "bootstrap": "^4.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0",
-    "reactstrap": "^5.0.0-alpha.4",
-    "typeface-playfair-display": "0.0.45"
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.1.0",
+    "typeface-playfair-display": "0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",
