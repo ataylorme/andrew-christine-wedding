@@ -1,0 +1,15 @@
+#engagement-photo {
+    border: solid 1em #FFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#engagement-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#engagement-photo .col {
+    padding: 0;
+}
