@@ -15,11 +15,6 @@ export default class Header extends Component {
                             Christine Russell
                         </h1>
                 </ReactFitText>
-                <ReactFitText maxFontSize="75px">
-                    <h2 className="display-3 text-center">
-                        May 4th, 2019
-                    </h2>
-                </ReactFitText>
             </Col>
         </Row>
     );
