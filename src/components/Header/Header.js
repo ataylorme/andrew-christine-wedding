@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import './Header.css';
 import { Col, Row } from 'reactstrap';
 import ReactFitText from 'react-fittext';

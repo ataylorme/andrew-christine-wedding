@@ -8,10 +8,10 @@ export default class SaveTheDate extends Component {
     return (
         <Row id="save-the-date">
             <Col>
-                <ReactFitText maxFontSize="36px">
-                    <p className="display-3 text-center">Please join us for our wedding celebration on</p>
+                <ReactFitText maxFontSize={36}>
+                    <p className="display-3 text-center">Save the date for</p>
                 </ReactFitText>
-                <ReactFitText maxFontSize="62px">
+                <ReactFitText maxFontSize={62}>
                         <h2 className="display-3 text-center">
                             May 4th, 2019
                         </h2>

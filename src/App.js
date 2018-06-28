@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header.js'
 import EngagementPhoto from './components/EngagementPhoto/EngagementPhoto.js'
+import SaveTheDate from './components/SaveTheDate/SaveTheDate.js'
 import { Container } from 'reactstrap';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <Container id="main">
         <Header />
         <EngagementPhoto />
+        <SaveTheDate />
       </Container>
     );
   }
