@@ -3,10 +3,10 @@ svg {
     height: auto;
 }
 
-body, body * {
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Oswald', sans-serif;
+.fancy-font, h1, h2, h3 {
+    font-family: 'Playfair Display,serif';
 }

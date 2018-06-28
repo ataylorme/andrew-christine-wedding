@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import { Col, Row } from 'reactstrap';
+import { Container, Col, Row } from 'reactstrap';
 import ReactFitText from 'react-fittext';
 
 export default class Header extends Component {
@@ -9,11 +9,11 @@ export default class Header extends Component {
         <Row id="header">
             <Col>
                 <ReactFitText>
-                        <h1 className="display-3 text-center">
-                            Andrew Taylor
-                            <span className="and">and</span>
-                            Christine Russell
-                        </h1>
+                    <h1 className="text-center delay-quarter-second animated fadeInDown">
+                        Andrew Taylor
+                        <span className="and">and</span>
+                        Christine Russell
+                    </h1>
                 </ReactFitText>
             </Col>
         </Row>
