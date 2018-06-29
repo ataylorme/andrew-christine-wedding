@@ -13,3 +13,14 @@
 #engagement-photo .col {
     padding: 0;
 }
+
+@media screen and (max-width: 796px) {
+    #engagement-photo img {
+        border-radius: 0;
+    }
+    #engagement-photo {
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 0 0 0;
+    }
+}
