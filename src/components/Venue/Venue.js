@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './index.css';
+import './Venue.css';
 // import icons from '../../utils/icons.js'
 import { Jumbotron, Button , Container, Col, Row } from 'reactstrap';
 
@@ -7,11 +7,9 @@ class Venue extends Component {
   render() {
     return (
         <div id="venue">
-            <Jumbotron fluid>
-                <Container>
                     <Row>
                         <Col>
-                            <h2 className="display-3 text-center">
+                            <h2 className="text-center">
                                 Wonser Woods Estate
                             </h2>
                             <hr />
@@ -44,8 +42,6 @@ class Venue extends Component {
                             </div>
                         </Col>
                     </Row>
-                </Container>
-            </Jumbotron>
         </div>
     );
   }

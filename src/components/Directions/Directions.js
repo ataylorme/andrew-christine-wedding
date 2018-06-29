@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import './index.css';
+import './Directions.css';
 // import icons from '../../utils/icons.js'
-import { Container, Col, Row, Button } from 'reactstrap';
+import { Col, Row, Button } from 'reactstrap';
 
 class Directions extends Component {
   render() {
     return (
         <div id="directions">
-            <Container>
                 <Row>
                     <Col>
                         <h2 className="display-3 text-center">
@@ -33,7 +32,6 @@ class Directions extends Component {
                         </div> 
                     </Col>
                 </Row>
-            </Container>
         </div>
     );
   }
