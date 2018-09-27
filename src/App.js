@@ -5,6 +5,7 @@ import EngagementPhoto from './components/EngagementPhoto/EngagementPhoto.js';
 import SaveTheDate from './components/SaveTheDate/SaveTheDate.js';
 import Venue from './components/Venue/Venue.js';
 import Video from './components/Video/Video.js';
+import RSVP from './components/RSVP/RSVP.js';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
                 <SaveTheDate />
                 <Venue />
                 <Video />
+                <RSVP />
         </Fragment>
     );
   }
