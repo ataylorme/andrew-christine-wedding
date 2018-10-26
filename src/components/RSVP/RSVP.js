@@ -49,7 +49,7 @@ export default class Venue extends Component {
                             <div id="rsvp-form">
                                 { this.state.showForm ? 
                                     <Fragment>
-                                        <iframe id="RSVPifyIFrame" style={{width: "100%", border: "none", overflow: "scroll", minHeight: "300px"}} allowtransparency="true" src="https://taylorrussellwedding.app.rsvpify.com/?embed=1&amp;js=1" frameBorder="0" scrolling="no"></iframe>
+                                        <iframe id="RSVPifyIFrame" style={{width: "100%", border: "none", overflow: "scroll", minHeight: "300px"}} allowtransparency="true" src="https://taylorrussellwedding.app.rsvpify.com/?embed=1&amp;js=1" frameBorder="0" scrolling="no" title="Taylor/Russell RSVP Form"></iframe>
                                         <ScriptTag type="text/javascript" dangerouslySetInnerHTML={{ __html:
                                             `iFrameResize({autoResize: false,checkOrigin: false,heightCalculationMethod: 'max', enablePublicMethods: true}, "#RSVPifyIFrame");`}}></ScriptTag>
                                     </Fragment>

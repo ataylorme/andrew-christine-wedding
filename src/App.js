@@ -18,7 +18,7 @@ class App extends Component {
                 <Venue />
                 <Video />
                 <Timeline />
-                {/*<RSVP />*/}
+                <RSVP />
         </Fragment>
     );
   }
