@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Menu.css';
-import { Container, Nav, NavLink } from 'reactstrap';
+import { Container, Nav, NavItem, NavLink } from 'reactstrap';
 import ReactFitText from 'react-fittext';
 
 export default class Menu extends Component {
@@ -9,19 +9,25 @@ export default class Menu extends Component {
         <Container id="menu" className="text-center">
             <Nav horizontal="true">
                 <ReactFitText minFontSize={24} maxFontSize={48}>
-                    <NavLink href="#venue" className="col-4">
-                        Venue
-                    </NavLink>
+                    <NavItem  className="col-4">
+                        <NavLink href="#venue">
+                            Venue
+                        </NavLink>
+                    </NavItem>
                 </ReactFitText>
                 <ReactFitText minFontSize={24} maxFontSize={48}>
-                    <NavLink href="#timeline" className="col-4">
-                        Our Story
-                    </NavLink>
+                    <NavItem  className="col-4">
+                        <NavLink href="#timeline">
+                            Our Story
+                        </NavLink>
+                    </NavItem>
                 </ReactFitText>
                 <ReactFitText minFontSize={24} maxFontSize={48}>
-                    <NavLink href="#rsvp" className="col-4">
-                        RSVP
-                    </NavLink>
+                    <NavItem  className="col-4">
+                        <NavLink href="#rsvp">
+                            RSVP
+                        </NavLink>
+                    </NavItem>
                 </ReactFitText>
             </Nav>
         </Container>
