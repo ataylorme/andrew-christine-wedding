@@ -1,12 +1,20 @@
-#engagement-photo {
+#engagement-photos {
     padding: 0;
 }
 
-#engagement-photo img {
+#engagement-photos img {
     width: 100%;
     height: auto;
 }
 
-#engagement-photo .col {
+#engagement-photos .col {
     padding: 0;
+}
+
+#engagement-photos .carousel-control-next, #engagement-photos .carousel-control-prev {
+    cursor: pointer;
+}
+
+#engagement-photos .carousel-control-next:hover, #engagement-photos .carousel-control-prev:hover {
+    background: rgba(0,0,0,0.25);
 }
