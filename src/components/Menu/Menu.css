@@ -1,0 +1,16 @@
+#menu {
+    border-bottom: solid 1px #000;
+    margin: 0 auto 2em auto;
+    padding: 0;
+}
+
+#menu a {
+    padding: 1em 0;
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 1169px) {
+    #menu a {
+        
+    }
+}
