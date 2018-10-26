@@ -6,7 +6,7 @@ export default class Menu extends Component {
   render() {
     return (
         <Container id="menu" className="text-center">
-            <Nav horizontal="true">
+            <Nav>
                 <NavItem  className="col-4">
                     <NavLink href="#venue">
                         Venue
