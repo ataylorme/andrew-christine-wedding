@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './EngagementPhoto.css';
 import { Container } from 'reactstrap';
-import EngagementPhoto2200 from './andrew-christine-engagement-12-09-2017-2200.jpg';
-import EngagementPhoto1100 from './andrew-christine-engagement-12-09-2017-1100.jpg';
-import EngagementPhoto640 from './andrew-christine-engagement-12-09-2017-640.jpg';
-import EngagementPhoto400 from './andrew-christine-engagement-12-09-2017-400.jpg';
+import EngagementPhoto2200 from './andrew-christine-engagement-10-2018-2200.jpg';
+import EngagementPhoto1100 from './andrew-christine-engagement-10-2018-1100.jpg';
+import EngagementPhoto640 from './andrew-christine-engagement-10-2018-640.jpg';
+import EngagementPhoto400 from './andrew-christine-engagement-10-2018-400.jpg';
 
 export default class EngagementPhoto extends Component {
   render() {

@@ -1,26 +1,12 @@
 #engagement-photo {
-    border: solid 1em #FFF;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    padding: 0;
 }
 
 #engagement-photo img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 #engagement-photo .col {
     padding: 0;
-}
-
-@media screen and (max-width: 796px) {
-    #engagement-photo img {
-        border-radius: 0;
-    }
-    #engagement-photo {
-        border-radius: 0;
-        border: none;
-        box-shadow: 0 0 0 0;
-    }
 }
