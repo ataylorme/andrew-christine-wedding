@@ -7,10 +7,23 @@
 #menu a {
     padding: 1em 0;
     line-height: 1em;
+    color: rgb(27, 94, 161);
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    font-size: 36px;
+}
+
+#menu a:hover {
+    background: rgb(27, 94, 161);
+    color: #ffffff;
+}
+
+#menu .col-4 {
+    padding: 0;
 }
 
 @media only screen and (max-width: 1169px) {
     #menu a {
-        
+        font-size: 24px;
     }
 }
