@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 svg {
     width: 100%;
     height: auto;
