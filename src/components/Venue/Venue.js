@@ -3,6 +3,7 @@ import './Venue.css';
 // import icons from '../../utils/icons.js'
 import { Container, Col, Row } from 'reactstrap';
 import ReactFitText from 'react-fittext';
+import Video from '../Video/Video.js';
 
 export default class Venue extends Component {
   render() {
@@ -12,9 +13,7 @@ export default class Venue extends Component {
                 <Row className="heading">
                     <Col>
                         <ReactFitText maxFontSize={62}>
-                                <h2>
-                                    Venue
-                                </h2>
+                                <h2>Venue</h2>
                         </ReactFitText>
                     </Col>
                 </Row>
@@ -34,9 +33,7 @@ export default class Venue extends Component {
                         </ReactFitText>
                     </Col>
                     <Col sm="12" lg="4">
-                    <div className="embed-responsive embed-responsive-1by1">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1SgKOQy7lb9BjrMdz3Mybezo-o2j1WqOu" width="100%" height="100%" title="Taylor/Russell Wedding Map"></iframe>
-                </div>
+                        <Video />
                     </Col>
                 </Row>
             </Container>

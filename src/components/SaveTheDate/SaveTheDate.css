@@ -1,6 +1,5 @@
 #save-the-date {
-    border-top: solid 1px #000;
     border-bottom: solid 1px #000;
-    margin: 2em auto;
+    margin: 0 auto 2em auto;
     padding: 1em;
 }

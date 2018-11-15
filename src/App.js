@@ -5,7 +5,7 @@ import Menu from './components/Menu/Menu.js';
 import EngagementPhoto from './components/EngagementPhoto/EngagementPhoto.js';
 import SaveTheDate from './components/SaveTheDate/SaveTheDate.js';
 import Venue from './components/Venue/Venue.js';
-import Video from './components/Video/Video.js';
+import Map from './components/Map/Map.js';
 import RSVP from './components/RSVP/RSVP.js';
 import Timeline from './components/Timeline/Timeline.js';
 
@@ -17,9 +17,9 @@ class App extends Component {
                 <Menu />
                 <EngagementPhoto />
                 <SaveTheDate />
-                <Venue />
-                <Video />
                 <Timeline />
+                <Venue />
+                <Map />
                 <RSVP />
         </Fragment>
     );
