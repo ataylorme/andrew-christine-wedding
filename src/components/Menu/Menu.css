@@ -4,16 +4,56 @@
     padding: 0;
     background: #ffffff;
 }
+@media only screen and (min-width: 768px) {
+    #menu .menu-label {
+        display: none;
+    }
+}
 
-#menu a {
-    padding: 0.75em 0;
+#menu nav.navbar {
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu nav.navbar {
+        padding: 0.5em 2em;
+    }
+}
+
+#menu ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu ul.navbar-nav {
+        flex-direction: column;
+    }
+}
+
+#menu ul.navbar-nav li.nav-item {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu .navbar-collapse {
+        margin-top: 0.5em;
+        border-top: solid 1px #000000;
+    }
+}
+
+#menu ul.navbar-nav li.nav-item > a {
+    padding: 0.75em;
     line-height: 1em;
-    /*color: rgb(27, 94, 161);*/
     color: #000000;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
     font-size: 24px;
-    border-top: solid 1px #000;
+    display: inline-block;
 }
 #menu a.no-border {
     border: none;
@@ -25,18 +65,24 @@
     }
 }
 
-#menu a:hover {
-    /*background: rgb(27, 94, 161);*/
+#menu ul.navbar-nav li.nav-item > a:hover {
     background: #000000;
     color: #ffffff;
 }
 
-#menu .col-4 {
-    padding: 0;
+@media only screen and (max-width: 768px) {
+    #menu ul.navbar-nav li.nav-item > a:hover {
+        background: none;
+        color: #000000;
+    }
 }
 
 @media only screen and (max-width: 1169px) {
     #menu a {
         font-size: 18px;
     }
+}
+
+#menu .dropdown-item {
+    font-size: 24px;
 }

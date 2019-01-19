@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.css';
+import classnames from 'classnames';
+
+// Photos!
 import fcDallasPhoto from './images/fc-dallas-game.jpg';
 import Pre5KPhoto from './images/andrew-christine-5k.jpg';
 // import AndrewAndChristineBreweryPhoto from './images/andrew-christine-brewery.jpg';
@@ -21,8 +24,7 @@ import weddingChairPhoto from './images/wedding-chairs-on-grass.jpg';
 import coconutBaySuitePhoto from './images/serenity-at-coconut-bay-suite.jpg';
 import bowlingRussellFamilyPhoto from './images/russell-family-bowling.jpg';
 // import icons from '../../utils/icons.js'
-import { Container, Col, Row } from 'reactstrap';
-import ReactFitText from 'react-fittext';
+import { Container, Col, Row, Button } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 export default class Timeline extends Component {
@@ -30,41 +32,41 @@ export default class Timeline extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            rsvpNumber: '',
-            showForm: false
+            showTimeline: null
         };
     
-        this.handleFormChange = this.handleFormChange.bind(this);
-        this.handleFormSubmit = this.handleFormSubmit.bind(this);
-      }
+        this.toggleTimeline = this.toggleTimeline.bind(this);
+    }
     
-      handleFormChange(event) {
-        this.setState({rsvpNumber: event.target.value});
-      }
-    
-      handleFormSubmit(event) {
-        const phoneNumber = this.state.rsvpNumber.replace(/\D/g,'');
-        if( phoneNumber === '2149018122' || phoneNumber === '3096352215' ){
-            this.setState({showForm: true});
+    toggleTimeline() {
+        if( this.state.showTimeline === null ){
+            this.setState({
+                showTimeline: true
+            });
         } else {
-            this.setState({showForm: false});
+            this.setState({
+                showTimeline: ! this.state.showTimeline
+            });
         }
-        event.preventDefault();
-      }
+        
+    }
 
     render() {
         return (
-            <div id="timeline">
-                <Container className="text-center">
-                    <Row className="heading">
-                        <Col>
-                            <ReactFitText maxFontSize={62}>
-                                    <h2>
-                                        Our Story
-                                    </h2>
-                            </ReactFitText>
-                        </Col>
-                    </Row>
+            <div id="timeline" className={classnames({active: this.state.showTimeline === true})}>
+                <Button className="fancy-font" size="lg" onClick={() => { this.toggleTimeline(); }}>
+                    {
+                        this.state.showTimeline === true ? <span>Hide Our Story</span> : <span>Show Our Story</span>
+                    }
+                </Button>
+                <Container
+                    className={
+                        classnames({
+                            fadeInDown: this.state.showTimeline === true,
+                            fadeOutUp: this.state.showTimeline === false
+                        })
+                    }
+                >
                     <Row className="align-items-center justify-content-center">
                         <Col>
                             <VerticalTimeline>

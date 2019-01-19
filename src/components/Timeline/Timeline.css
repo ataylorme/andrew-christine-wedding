@@ -1,6 +1,45 @@
 #timeline {
     padding: 2em 0;
+    transition: all 0.25s ease-in-out;
+}
+
+#timeline.active {
     background: lightslategrey;
+}
+
+#timeline > button {
+    display: block;
+    max-width: 75vw;
+    margin: 0 auto;
+    font-size: 36px;
+    background: lightslategrey;
+    border: solid 1px #000000;
+    color: #FFFFFF;
+}
+
+#timeline > button:hover {
+    cursor: pointer;
+    background: darkslategrey;
+}
+
+#timeline.active > button {
+    background: none;
+}
+
+#timeline.active > button:hover {
+    background: darkslategrey;
+}
+
+#timeline > .container {
+    display: none;
+}
+
+#timeline.active > .container {
+    display: inherit;
+}
+
+#timeline .heading {
+    margin-top: 1em;
 }
 
 #timeline h2 {
