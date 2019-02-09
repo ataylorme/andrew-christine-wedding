@@ -65,32 +65,32 @@ export default class Menu extends Component {
                                 </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
-                                        <NavLink href="#more-information" onClick={() => { this.props.toggleInfoTabs('1'); }}>
+                                        <NavLink href="#travel" onClick={() => { this.props.toggleInfoTabs('travel'); }}>
                                             Travel
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <NavLink href="#more-information" onClick={() => { this.props.toggleInfoTabs('2'); }}>
+                                        <NavLink href="#accomodations" onClick={() => { this.props.toggleInfoTabs('accomodations'); }}>
                                             Accomodations
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <NavLink href="#more-information" onClick={() => { this.props.toggleInfoTabs('3'); }}>
+                                        <NavLink href="#food-and-drinks" onClick={() => { this.props.toggleInfoTabs('food-and-drinks'); }}>
                                             Food and Drinks
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <NavLink href="#more-information" onClick={() => { this.props.toggleInfoTabs('4'); }}>
+                                        <NavLink href="#things-to-do" onClick={() => { this.props.toggleInfoTabs('things-to-do'); }}>
                                             Things To Do
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <NavLink href="#more-information" onClick={() => { this.props.toggleInfoTabs('5'); }}>
+                                        <NavLink href="#outdoor-activities" onClick={() => { this.props.toggleInfoTabs('outdoor-activities'); }}>
                                             Outdoor Activities
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <NavLink href="#more-information" onClick={() => { this.props.toggleInfoTabs('6'); }}>
+                                        <NavLink href="#map" onClick={() => { this.props.toggleInfoTabs('map'); }}>
                                             Map
                                         </NavLink>
                                     </DropdownItem>

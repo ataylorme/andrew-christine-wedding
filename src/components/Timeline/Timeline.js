@@ -6,7 +6,6 @@ import classnames from 'classnames';
 // Photos!
 import fcDallasPhoto from './images/fc-dallas-game.jpg';
 import Pre5KPhoto from './images/andrew-christine-5k.jpg';
-// import AndrewAndChristineBreweryPhoto from './images/andrew-christine-brewery.jpg';
 import AndrewAndChristineCraterLakePhoto from './images/andrew-christine-crater-lake.jpg';
 import AndrewAndChristineChicagoPhoto from './images/andrew-christine-chicago.jpg';
 import ChristineAndZivaPhoto from './images/ziva-chistine-dog-park-after-adoption.jpg';
@@ -14,7 +13,6 @@ import CrockettDriveHousePhoto from './images/crockett-drive-house.jpg';
 import zivaOnTheBedPhoto from './images/ziva-on-the-bed-in-andrews-face.jpg';
 import rueAndZivaCratePhoto from './images/rue-and-ziva-sharing-the-crate.jpg';
 import rueAndZivaFrontDoorPhoto from './images/rue-ziva-looking-out-front-door-plano-house.jpg';
-// import sillyFacesHikingPhoto from './images/silly-faces-hiking-in-oregon.jpg';
 import christineGreysonPhoto from './images/christine-greyson-hawaii.jpg';
 import hikingInHawaiiPhoto from './images/andrew-christine-hiking-hawaii.jpg';
 import rueAndZivaRoadTripPhoto from './images/rue-ziva-road-trip-to-oregon.jpg';
@@ -23,7 +21,6 @@ import filbertCreekHousePhoto from './images/14079-Filbert-Creek-Dr-front-of-hou
 import weddingChairPhoto from './images/wedding-chairs-on-grass.jpg';
 import coconutBaySuitePhoto from './images/serenity-at-coconut-bay-suite.jpg';
 import bowlingRussellFamilyPhoto from './images/russell-family-bowling.jpg';
-// import icons from '../../utils/icons.js'
 import { Container, Col, Row, Button } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 

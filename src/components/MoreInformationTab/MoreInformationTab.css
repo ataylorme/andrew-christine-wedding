@@ -1,0 +1,39 @@
+#more-information .info-tab {
+    transition: all 0.25s ease-in-out;
+}
+
+#more-information .info-tab.active {
+    background: #ded6ca;
+}
+
+#more-information .info-tab a.nav-link {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    border-top: solid 1px #000000;
+    border-radius: 0;
+    display: block;
+    text-align: center;
+}
+
+#more-information .info-tab a.nav-link.active {
+    border-bottom: solid 1px #000000;
+}
+
+#more-information .info-tab a.nav-link:hover {
+    background: #ded6ca;
+}
+
+#more-information .info-tab .contents {
+    display: none;
+    transition: all 0.25s ease-in-out;
+}
+
+#more-information .info-tab.active .contents {
+    display: inherit;
+    padding: 1em 2em;
+}
+
+#more-information .info-tab .contents p{
+    margin-bottom: 1em;
+}

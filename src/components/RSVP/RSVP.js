@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import './RSVP.css';
-// import icons from '../../utils/icons.js'
 import { Container, Col, Row } from 'reactstrap';
 import ReactFitText from 'react-fittext';
 import ScriptTag from 'react-script-tag';

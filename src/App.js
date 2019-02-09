@@ -14,7 +14,7 @@ class App extends Component {
     super(props);
     this.toggleInfoTabs = this.toggleInfoTabs.bind(this);
     this.state = {
-      activeInfoTab: '1'
+      activeInfoTab: '0'
     };
   }
 
