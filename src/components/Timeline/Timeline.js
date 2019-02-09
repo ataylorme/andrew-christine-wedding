@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.css';
+import ReactFitText from 'react-fittext';
 import classnames from 'classnames';
 
 // Photos!
@@ -51,26 +52,20 @@ export default class Timeline extends Component {
     render() {
         return (
             <div id="timeline" className={classnames({active: this.state.showTimeline === true})}>
-                <Button className="fancy-font" size="lg" onClick={() => { this.toggleTimeline(); }}>
-                    {
-                        this.state.showTimeline === true ? <span>Hide Our Story</span> : <span>Show Our Story</span>
-                    }
-                </Button>
-                <Container
-                    className={
-                        classnames({
-                            fadeInDown: this.state.showTimeline === true,
-                            fadeOutUp: this.state.showTimeline === false
-                        })
-                    }
-                >
+                <div className="toggle-button fancy-font" onClick={() => { this.toggleTimeline(); }}>
+                    <ReactFitText maxFontSize={48}>
+                            {
+                                this.state.showTimeline === true ? <h2>Hide Our Story</h2> : <h2>See Our Story</h2>
+                            }
+                    </ReactFitText>
+                </div>
+                <Container>
                     <Row className="align-items-center justify-content-center">
                         <Col>
                             <VerticalTimeline>
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">First Date</h3>
                                     <h4 className="vertical-timeline-element-subtitle">February 20th, 2015</h4>
@@ -80,7 +75,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Things Get Serious</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Spring 2015</h4>
@@ -90,7 +84,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">+1 Dog</h3>
                                     <h4 className="vertical-timeline-element-subtitle">March 2015</h4>
@@ -100,7 +93,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Rue &amp; Ziva Bond</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Summer 2015</h4>
@@ -110,7 +102,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Moved In Together</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Summer 2015</h4>
@@ -120,7 +111,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">The Furniture Battle</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Summer 2015</h4>
@@ -130,7 +120,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">First Vacation Together</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Fall 2015</h4>
@@ -140,27 +129,22 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Meeting the Family</h3>
-                                   {/* <h4 className="vertical-timeline-element-subtitle">Fall 2015 to Spring 2016</h4>*/}
                                     <img src={christineGreysonPhoto} alt="Christine Russell and Greyson Taylor." />
                                     <p></p>
                                 </VerticalTimelineElement>
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">On Both Sides</h3>
-                                    {/*<h4 className="vertical-timeline-element-subtitle">Fall 2015 to Spring 2016</h4>*/}
                                     <img src={bowlingRussellFamilyPhoto} alt="Andrew Taylor and the Russell family bowling." />
                                     <p></p>
                                 </VerticalTimelineElement>
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Visited Chicago</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Labor Day Weekend 2016</h4>
@@ -170,7 +154,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Vacation in Hawaii</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Spring 2017</h4>
@@ -180,7 +163,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Moved to Plano</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Summer 2017</h4>
@@ -190,7 +172,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Moved to Oregon</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Fall 2017</h4>
@@ -200,7 +181,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Got Engaged</h3>
                                     <h4 className="vertical-timeline-element-subtitle">December 2017</h4>
@@ -210,7 +190,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Bought a House</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Summer 2018</h4>
@@ -220,7 +199,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="even"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Getting Married</h3>
                                     <h4 className="vertical-timeline-element-subtitle">May 4th, 2019</h4>
@@ -230,7 +208,6 @@ export default class Timeline extends Component {
                                 <VerticalTimelineElement
                                     className="odd"
                                     iconStyle={{ background: '#2f577a', color: '#fff' }}
-                                    /*icon={<WorkIcon />}*/
                                 >
                                     <h3 className="vertical-timeline-element-title">Honeymoon</h3>
                                     <h4 className="vertical-timeline-element-subtitle">May 2019</h4>

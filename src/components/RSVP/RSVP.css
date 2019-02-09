@@ -1,10 +1,20 @@
 #rsvp {
-    margin: 2em auto;
+    background: lightslategrey;
+    padding: 2em 0 4em 0;
+}
+
+#rsvp .container {
+    margin: 0 auto;
+}
+
+#rsvp h2 {
+    color: #FFFFFF;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #rsvp-form {
     background: #2f577a;
-    color: white;
+    color: #FFFFFF;
     min-height: 150px;
     padding: 25px;
 }

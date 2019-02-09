@@ -26,9 +26,9 @@ export default class MoreInformationTab extends Component {
                     </NavLink>
                 </ReactFitText>
                 <div className={
-                    classnames(['contents',{
-                        fadeInDown: this.props.activeInfoTab === slug,
-                        fadeOutUp: this.props.activeInfoTab !== slug
+                    classnames(['contents', 'animated',{
+                        fadeIn: this.props.activeInfoTab === slug,
+                        fadeOut: this.props.activeInfoTab !== slug
                     }])
                 }>
                     {this.props.children}
