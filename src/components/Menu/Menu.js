@@ -75,18 +75,18 @@ export default class Menu extends Component {
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
+                                        <NavLink href="#outdoor-activities" onClick={() => { this.props.toggleInfoTabs('outdoor-activities'); }}>
+                                            Outdoor Activities
+                                        </NavLink>
+                                    </DropdownItem>
+                                    <DropdownItem>
                                         <NavLink href="#food-and-drinks" onClick={() => { this.props.toggleInfoTabs('food-and-drinks'); }}>
                                             Food and Drinks
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <NavLink href="#things-to-do" onClick={() => { this.props.toggleInfoTabs('things-to-do'); }}>
-                                            Things To Do
-                                        </NavLink>
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        <NavLink href="#outdoor-activities" onClick={() => { this.props.toggleInfoTabs('outdoor-activities'); }}>
-                                            Outdoor Activities
+                                        <NavLink href="#indoor-activities" onClick={() => { this.props.toggleInfoTabs('indoor-activites'); }}>
+                                            Indoor Activities
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>

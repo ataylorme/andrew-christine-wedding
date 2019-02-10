@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Map from '../Map/Map.js';
 import MoreInformationTab from '../MoreInformationTab/MoreInformationTab.js';
 import ReactFitText from 'react-fittext';
 import './MoreInformation.css';
@@ -48,6 +47,45 @@ export default class MoreInformation extends Component {
                         Finally, for a unique experience, consider McMenamins Edgefield (<a href="https://goo.gl/maps/naizd1PZV5t">map</a>). Edgefield was a poor farm in the 1900s that has been restored and converted into a large complex with a hotel, concert venue, spa, restauarants, brewery, and more. Even if you don't stay here it is well worth visiting.
                     </p>
                 </MoreInformationTab>
+                <MoreInformationTab title={'Outdoor Activities'} toggleInfoTabs={this.props.toggleInfoTabs} activeInfoTab={this.props.activeInfoTab}>
+                    <p>
+                        Portland has tons of great outdoor activities within the city or just a few hours drive. We recommend renting a car and seeing the forest, mountain and coast.
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                            With one of the world's largest collection of roses, The Rose Garden is why Portland is known as the city of roses. Best of all, it is free! (<a href="https://maps.google.com/?cid=10519281268788551622">map</a>)
+                            </li>
+                            <li>
+                                Right next to the Rose Garden is the Japanese Garden. While not free, it is a great place to enjoy a relaxing stroll and find some nature without leaving the city. (<a href="https://maps.google.com/?cid=11424717693547273965">map</a>)
+                            </li>
+                            <li>
+                                Haystack Rock is a landmark of the Oregon coast, Haystack Rock is near the town of Cannon Beach. One of many great towns along the Oregon coast with shops and restaurants. There is also plenty of hiking in the area. (<a href="https://maps.google.com/?q=Haystack+Rock&ftid=0x5494a52158e1fd35:0x4d0fcaf7a4c0faf5">map</a>)
+                            </li>
+                            <li>
+                                Rhododendrons are a bush with beautiful flowers when they are in bloom. (<a href="https://maps.google.com/?cid=4887060410880106075">map</a>)
+                            </li>
+                            <li>
+                                In the quaint town of Sandy, Jonsrud View Point has a great view on a clear day. (<a href="https://maps.google.com/?cid=15126490883917199125">map</a>)
+                            </li>
+                            <li>
+                                Multnomah Falls is a large waterfall right off the highway. It is a great place to stop on the way to the Columbia River Gorge or Mt. Hood. (<a href="https://maps.google.com/?cid=7781839161136658415">map</a>)
+                            </li>
+                            <li>
+                                Salmon River Trail is our favorite hiking trail! The first 3 miles are easy to moderate with great view of the river and old growth forest. After that the elevation climbs quickly. (<a href="https://maps.google.com/?cid=5950851224302706648">map</a>)
+                            </li>
+                            <li>
+                                Our favorite park by far, the Sandy River Delta is over 1,000 acres full of trail for hiking and biking. You must love dogs though, as they are allowed off leash and you will encounter them by the dozens. (<a href="https://maps.google.com/?cid=6750743274387671536">map</a>)
+                            </li>
+                            <li>
+                                Trillium Lake has some of the best views of the mountain around. Come at sunset to experience a truly spectacular view. (<a href="https://maps.google.com/?q=Trillium+Lake&ftid=0x54be185d1c9fbbdf:0xd9a336f0bca80d5a">map</a>)
+                            </li>
+                            <li>
+                                Tillamook State Forest is a large forest that makes for a scenic drive on your way to the coast. (<a href="https://maps.google.com/?q=Tillamook+State+Forest&ftid=0x549521d327c6f4b7:0xebbb0004bb7ee902">map</a>)
+                            </li>
+                        </ul>
+                    </p>
+                </MoreInformationTab>
                 <MoreInformationTab title={'Food and Drinks'} toggleInfoTabs={this.props.toggleInfoTabs} activeInfoTab={this.props.activeInfoTab}>
                     <p>There is no shortage of great food and drinks so we can't list everything but here are some of our favorites. <a href="https://pdx.eater.com/">PDX Eater</a> is a great resource as well. If you want to visit some of the craft breweries Oregon is known for <a href="https://oregoncraftbeer.org/breweries/portland-area/">oregoncraftbeer.org as a list</a>.</p>
                     <p>
@@ -88,13 +126,10 @@ export default class MoreInformation extends Component {
                         </ul>
                     </p>
                 </MoreInformationTab>
-                <MoreInformationTab title={'Things To Do'} toggleInfoTabs={this.props.toggleInfoTabs} activeInfoTab={this.props.activeInfoTab}>
+                <MoreInformationTab title={'Indoor Activities'} toggleInfoTabs={this.props.toggleInfoTabs} activeInfoTab={this.props.activeInfoTab}>
                     <p>Is the Pacific Northwest giving you nature overload? Here are some of our favorite things to do indoors.</p>
                     <p>
                         <ul>
-                            <li>
-                                McMenamins Edgefield is more than just a restaurant. Edgefield has a brewery, winery, golf course, concert venue and more. If you have an extra day this is one of our favorite places. (<a href="https://maps.google.com/?cid=11058002912153277250">map</a>)
-                            </li>
                             <li>
                                 McMenamins Edgefield is more than just a restaurant. Edgefield has a brewery, winery, golf course, concert venue and more. If you have an extra day this is one of our favorite places. (<a href="https://maps.google.com/?cid=11058002912153277250">map</a>)
                             </li>
@@ -122,47 +157,8 @@ export default class MoreInformation extends Component {
                         </ul>
                     </p>
                 </MoreInformationTab>
-                <MoreInformationTab title={'Outdoor Activities'} toggleInfoTabs={this.props.toggleInfoTabs} activeInfoTab={this.props.activeInfoTab}>
-                    <p>
-                        Portland has tons of great outdoor activities within the city or just a few hours drive. We recommend renting a car and seeing the forest, mountain and coast.
-                    </p>
-                    <p>
-                        <ul>
-                            <li>
-                            With one of the world's largest collection of roses, The Rose Garden is why Portland is known as the city of roses. Best of all, it is free! (<a href="https://maps.google.com/?cid=10519281268788551622">map</a>)
-                            </li>
-                            <li>
-                                Right next to the Rose Garden is the Japanese Garden. While not free, it is a great place to enjoy a relaxing stroll and find some nature without leaving the city. (<a href="https://maps.google.com/?cid=11424717693547273965">map</a>)
-                            </li>
-                            <li>
-                                Haystack Rock is a landmark of the Oregon coast, Haystack Rock is near the town of Cannon Beach. One of many great towns along the Oregon coast with shops and restaurants. There is also plenty of hiking in the area. (<a href="https://maps.google.com/?q=Haystack+Rock&ftid=0x5494a52158e1fd35:0x4d0fcaf7a4c0faf5">map</a>)
-                            </li>
-                            <li>
-                                Rhododendrons are a bush with beautiful flowers when they are in bloom. (<a href="https://maps.google.com/?cid=4887060410880106075">map</a>)
-                            </li>
-                            <li>
-                                In the quaint town of Sandy, Jonsrud View Point has a great view on a clear day. (<a href="https://maps.google.com/?cid=15126490883917199125">map</a>)
-                            </li>
-                            <li>
-                                Multnomah Falls is a large waterfall right off the highway. It is a great place to stop on the way to the Columbia River Gorge or Mt. Hood. (<a href="https://maps.google.com/?cid=7781839161136658415">map</a>)
-                            </li>
-                            <li>
-                                Salmon River Trail is our favorite hiking trail! The first 3 miles are easy to moderate with great view of the river and old growth forest. After that the elevation climbs quickly. (<a href="https://maps.google.com/?cid=5950851224302706648">map</a>)
-                            </li>
-                            <li>
-                                Our favorite park by far, the Sandy River Delta is over 1,000 acres full of trail for hiking and biking. You must love dogs though, as they are allowed of leash and you will encounter them by the dozens. (<a href="https://maps.google.com/?cid=6750743274387671536">map</a>)
-                            </li>
-                            <li>
-                                Trillium lake has some of the best views of the mountain around. Come at sunset to experience a truly spectacular view. (<a href="https://maps.google.com/?q=Trillium+Lake&ftid=0x54be185d1c9fbbdf:0xd9a336f0bca80d5a">map</a>)
-                            </li>
-                            <li>
-                                Tillamook State Forest is a large forest that makes for a scenic drive on your way to the coast. (<a href="https://maps.google.com/?q=Tillamook+State+Forest&ftid=0x549521d327c6f4b7:0xebbb0004bb7ee902">map</a>)
-                            </li>
-                        </ul>
-                    </p>
-                </MoreInformationTab>
                 <MoreInformationTab title={'Map'} toggleInfoTabs={this.props.toggleInfoTabs} activeInfoTab={this.props.activeInfoTab}>
-                    <Map />
+                    <p>We made <a href="https://drive.google.com/open?id=1SgKOQy7lb9BjrMdz3Mybezo-o2j1WqOu&usp=sharing">a custom Google Map</a> with our favorite places for food and drinks, indoor and outdoor activities, and more.</p>
                 </MoreInformationTab>
             </div>
         );
