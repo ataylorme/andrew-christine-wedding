@@ -22,7 +22,7 @@ import filbertCreekHousePhoto from './images/14079-Filbert-Creek-Dr-front-of-hou
 import weddingChairPhoto from './images/wedding-chairs-on-grass.jpg';
 import coconutBaySuitePhoto from './images/serenity-at-coconut-bay-suite.jpg';
 import bowlingRussellFamilyPhoto from './images/russell-family-bowling.jpg';
-import { Container, Col, Row, Button } from 'reactstrap';
+import { Container, Col, Row } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 export default class Timeline extends Component {

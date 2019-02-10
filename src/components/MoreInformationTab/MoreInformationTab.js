@@ -8,10 +8,6 @@ import {
 
 export default class MoreInformationTab extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     
     render() {
         const slug = this.props.title.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
