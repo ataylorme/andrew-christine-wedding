@@ -185,7 +185,7 @@ export default class Timeline extends Component {
                                     <h3 className="vertical-timeline-element-title">Got Engaged</h3>
                                     <h4 className="vertical-timeline-element-subtitle">December 2017</h4>
                                     <img src={engagementTimberlineHeidiPhoto} alt="Andrew Taylor proposong to Christine Russell at Timberline Lodge." />
-                                    <p>We got engaged at the historic Timeberline Lodge on Mt. Hood with the help of Heidi, the resident mountain dog.</p>
+                                    <p>We got engaged at the historic Timberline Lodge on Mt. Hood with the help of Heidi, the resident mountain dog.</p>
                                 </VerticalTimelineElement>
                                 <VerticalTimelineElement
                                     className="odd"
