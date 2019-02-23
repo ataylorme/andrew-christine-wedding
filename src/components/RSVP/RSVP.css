@@ -1,45 +1,45 @@
 #rsvp {
-    background: lightslategrey;
-    padding: 2em 0 4em 0;
+  background: lightslategrey;
+  padding: 2em 0 4em 0;
 }
 
 #rsvp .container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #rsvp h2 {
-    color: #FFFFFF;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #rsvp-form {
-    background: #2f577a;
-    color: #FFFFFF;
-    min-height: 150px;
-    padding: 25px;
+  background: #2f577a;
+  color: #ffffff;
+  min-height: 150px;
+  padding: 25px;
 }
 
 #rsvp-form label {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 #rsvp-form .btn {
-    color: #FFFFFF;
-    background-color: transparent;
-    background-image: none;
-    border-color: #FFFFFF;
-    transition: all 0.25 ease-in-out;
+  color: #ffffff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffffff;
+  transition: all 0.25 ease-in-out;
 }
 
 #rsvp-form .btn:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-    background-image: none;
-    border-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: none;
+  border-color: #000000;
 }
 
 @media only screen and (max-width: 768px) {
-    #rsvp-form .form-control {
-        margin: 0.5em 0 1em 0;
-    }
+  #rsvp-form .form-control {
+    margin: 0.5em 0 1em 0;
+  }
 }

@@ -1,9 +1,9 @@
 #map {
-    background: #ded6ca;
+  background: #ded6ca;
 }
 
 #more-information #map {
-    background: none;
-    max-height: 80vh;
-    overflow: hidden;
+  background: none;
+  max-height: 80vh;
+  overflow: hidden;
 }
