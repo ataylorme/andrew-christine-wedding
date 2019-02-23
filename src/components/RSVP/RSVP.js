@@ -59,12 +59,12 @@ export default class Venue extends Component {
                                                 In order to RSVP please enter the phone number of the bride or the groom
                                             </p>
                                             <div className="form-group row justify-content-center">
-                                                <label className="col-sm-5 col-md-3 col-form-label">Phone Number:</label>
-                                                <div className="col-6 col-sm-4 col-md-6">
+                                                <label className="col-12 col-md-12 col-form-label">Phone Number:</label>
+                                                <div className="col-12 col-md-6">
                                                     <input type="text" className="form-control" value={this.state.rsvpNumber} onChange={this.handleFormChange} />
                                                 </div>
-                                                <div className="col-6 col-sm-3 col-md-3">
-                                                    <input type="submit" className="btn btn-block" value="Verify"></input>
+                                                <div className="col-12 col-md-6">
+                                                    <input type="submit" className="btn btn-block" value="Verify" />
                                                 </div>
                                             </div>
                                         </form> 
