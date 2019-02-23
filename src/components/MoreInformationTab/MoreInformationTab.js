@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import ReactFitText from 'react-fittext';
 import './MoreInformationTab.css';
 import {
     NavLink,
@@ -13,14 +12,12 @@ export default class MoreInformationTab extends Component {
         const slug = this.props.title.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
         return (
             <div id={slug} className={classnames(['info-tab',{ active: this.props.activeInfoTab === slug }])}>
-                <ReactFitText maxFontSize={36}>
-                    <NavLink
-                    className={classnames({ active: this.props.activeInfoTab === slug })}
-                    onClick={() => { this.props.toggleInfoTabs(slug); }}
-                    >
-                        {this.props.title}
-                    </NavLink>
-                </ReactFitText>
+                <NavLink
+                className={classnames({ active: this.props.activeInfoTab === slug })}
+                onClick={() => { this.props.toggleInfoTabs(slug); }}
+                >
+                    {this.props.title}
+                </NavLink>
                 <div className={
                     classnames(['contents', 'animated',{
                         fadeIn: this.props.activeInfoTab === slug,
