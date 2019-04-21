@@ -22,7 +22,7 @@ export default class MoreInformation extends Component {
           toggleInfoTabs={this.props.toggleInfoTabs}
           activeInfoTab={this.props.activeInfoTab}
         >
-          <p>
+          <div>
             <ul>
               <li>
                 Portland only has one airport, PDX, and we recommend booking
@@ -42,7 +42,7 @@ export default class MoreInformation extends Component {
                 mountain, and forests are all within a days drive from Portland.
               </li>
             </ul>
-          </p>
+          </div>
         </MoreInformationTab>
         <MoreInformationTab
           title={"Accomodations"}
@@ -85,7 +85,7 @@ export default class MoreInformation extends Component {
             just a few hours drive. We recommend renting a car and seeing the
             forest, mountain and coast.
           </p>
-          <p>
+          <div>
             <ul>
               <li>
                 With one of the world's largest collection of roses, The Rose
@@ -176,7 +176,7 @@ export default class MoreInformation extends Component {
                 )
               </li>
             </ul>
-          </p>
+          </div>
         </MoreInformationTab>
         <MoreInformationTab
           title={"Food and Drinks"}
@@ -194,7 +194,7 @@ export default class MoreInformation extends Component {
             </a>
             .
           </p>
-          <p>
+          <div>
             <ul>
               <li>
                 Portland has great donuts and while Voodoo Donuts is more
@@ -293,7 +293,7 @@ export default class MoreInformation extends Component {
                 )
               </li>
             </ul>
-          </p>
+          </div>
         </MoreInformationTab>
         <MoreInformationTab
           title={"Indoor Activities"}
@@ -304,7 +304,7 @@ export default class MoreInformation extends Component {
             Is the Pacific Northwest giving you nature overload? Here are some
             of our favorite things to do indoors.
           </p>
-          <p>
+          <div>
             <ul>
               <li>
                 McMenamins Edgefield is more than just a restaurant. Edgefield
@@ -377,7 +377,7 @@ export default class MoreInformation extends Component {
                 )
               </li>
             </ul>
-          </p>
+          </div>
         </MoreInformationTab>
         <MoreInformationTab
           title={"Map"}
