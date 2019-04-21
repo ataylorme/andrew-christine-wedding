@@ -15,6 +15,9 @@ export default class SaveTheDate extends Component {
         <ReactFitText maxFontSize={62}>
           <h2 className="text-center">May 4th, 2019</h2>
         </ReactFitText>
+        <p class="text-center arrival">
+          Guests should arrive between 3:15 and 3:45 pm.<br />The ceremony will start at 4 pm and the reception will end at 9:30 pm.
+        </p>
       </Container>
     );
   }

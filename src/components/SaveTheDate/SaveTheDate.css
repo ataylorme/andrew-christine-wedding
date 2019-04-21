@@ -2,3 +2,7 @@
   margin: 0 auto;
   padding: 1em;
 }
+
+#save-the-date p.arrival {
+  margin-top: 25px;
+}
