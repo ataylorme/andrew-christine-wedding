@@ -11,7 +11,7 @@ export default class Header extends Component {
           <h1 className="text-center delay-quarter-second animated fadeInDown">
             Andrew Taylor
             <span className="and">and</span>
-            Christine Russell
+            Christine <span className="strike-through">Russell</span> Taylor
           </h1>
         </ReactFitText>
       </Container>

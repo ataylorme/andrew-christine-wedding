@@ -351,14 +351,14 @@ export default class Timeline extends Component {
                   iconStyle={{ background: "#2f577a", color: "#fff" }}
                 >
                   <h3 className="vertical-timeline-element-title">
-                    Getting Married
+                    We Got Married
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle">
                     May 4th, 2019
                   </h4>
                   <img src={weddingChairPhoto} alt="Wedding chairs on grass." />
                   <p>
-                    We are so excited for our wedding and hope you can join us.
+                    Our wedding was incredible, thank you to everyone who joined us in making the day so special.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -374,7 +374,7 @@ export default class Timeline extends Component {
                     alt="Hotel room at Coconut Bay Resort."
                   />
                   <p>
-                    Our honeymoon will be a week spent in the Carribean at the
+                    For our honeymoon we spent a week spent in the Carribean at the
                     Coconut Bay Resort in St. Lucia.
                   </p>
                 </VerticalTimelineElement>

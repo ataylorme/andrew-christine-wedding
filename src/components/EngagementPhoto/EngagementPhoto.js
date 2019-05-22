@@ -7,6 +7,32 @@ import {
   CarouselControl
 } from 'reactstrap';
 
+// Wedding Ceremony
+import WeddingPhotoCeremony2200 from './andrew-christine-wedding-ceremony-2200.jpg';
+import WeddingPhotoCeremony1100 from './andrew-christine-wedding-ceremony-1100.jpg';
+import WeddingPhotoCeremony640 from './andrew-christine-wedding-ceremony-640.jpg';
+import WeddingPhotoCeremony400 from './andrew-christine-wedding-ceremony-400.jpg';
+
+// Wedding Kiss On Cheek
+/*
+import WeddingPhotoKissOnCheek2200 from './andrew-christine-wedding-kiss-on-cheek-2200.jpg';
+import WeddingPhotoKissOnCheek1100 from './andrew-christine-wedding-kiss-on-cheek-1100.jpg';
+import WeddingPhotoKissOnCheek640 from './andrew-christine-wedding-kiss-on-cheek-640.jpg';
+import WeddingPhotoKissOnCheek400 from './andrew-christine-wedding-kiss-on-cheek-400.jpg';
+*/
+
+// Wedding Kiss Mountain
+import WeddingPhotoKissMountain2200 from './andrew-christine-wedding-kissing-mountain-2200.jpg';
+import WeddingPhotoKissMountain1100 from './andrew-christine-wedding-kissing-mountain-1100.jpg';
+import WeddingPhotoKissMountain640 from './andrew-christine-wedding-kissing-mountain-640.jpg';
+import WeddingPhotoKissMountain400 from './andrew-christine-wedding-kissing-mountain-400.jpg';
+
+// Wedding Kiss Sunny Field
+import WeddingPhotoKissSunshine2200 from './andrew-christine-wedding-kissing-sunshine-2200.jpg';
+import WeddingPhotoKissSunshine1100 from './andrew-christine-wedding-kissing-sunshine-1100.jpg';
+import WeddingPhotoKissSunshine640 from './andrew-christine-wedding-kissing-sunshine-640.jpg';
+import WeddingPhotoKissSunshine400 from './andrew-christine-wedding-kissing-sunshine-400.jpg';
+
 // Piggy Back
 import EngagementPhotoPiggyBack2200 from './andrew-christine-engagement-10-2018-2200.jpg';
 import EngagementPhotoPiggyBack1100 from './andrew-christine-engagement-10-2018-1100.jpg';
@@ -44,6 +70,40 @@ import EngagementPhotoSittingInField640 from './andrew-christine-engagement-sitt
 import EngagementPhotoSittingInField400 from './andrew-christine-engagement-sitting-in-field-10-2018-400.jpg';
 
 const EngagementPhotos = [
+  {
+    fileName: 'andrew-christine-wedding-ceremony',
+    src2200: WeddingPhotoCeremony2200,
+    src1100: WeddingPhotoCeremony1100,
+    src640: WeddingPhotoCeremony640,
+    src400: WeddingPhotoCeremony400,
+    altText: 'Andrew Taylor and Christine Russell Wedding Ceremony',
+  },
+  {
+    fileName: 'andrew-christine-wedding-kissing-mountain',
+    src2200: WeddingPhotoKissMountain2200,
+    src1100: WeddingPhotoKissMountain1100,
+    src640: WeddingPhotoKissMountain640,
+    src400: WeddingPhotoKissMountain400,
+    altText: 'Andrew Taylor and Christine Russell kissing with Mt. Hood in the background',
+  },
+  {
+    fileName: 'andrew-christine-wedding-kissing-sunshine',
+    src2200: WeddingPhotoKissSunshine2200,
+    src1100: WeddingPhotoKissSunshine1100,
+    src640: WeddingPhotoKissSunshine640,
+    src400: WeddingPhotoKissSunshine400,
+    altText: 'Andrew Taylor and Christine Russell kissing in a sunny field',
+  },
+  /*
+  {
+    fileName: 'andrew-christine-wedding-kiss-on-cheek',
+    src2200: WeddingPhotoKissOnCheek2200,
+    src1100: WeddingPhotoKissOnCheek1100,
+    src640: WeddingPhotoKissOnCheek640,
+    src400: WeddingPhotoKissOnCheek400,
+    altText: 'Andrew Taylor and Christine Russell as newlyweds',
+  },
+  */
   {
     fileName: 'andrew-christine-engagement-10-2018',
     src2200: EngagementPhotoPiggyBack2200,
