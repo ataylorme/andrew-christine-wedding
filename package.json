@@ -7,7 +7,7 @@
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.13.0",
     "react-fittext": "^1.0.0",
     "react-script-tag": "^1.1.2",
     "react-scripts": "^3.0.0",
